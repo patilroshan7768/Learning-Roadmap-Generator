@@ -30,8 +30,11 @@ app.use('/api/admin', adminRoutes);
 // Define the Port
 const PORT = process.env.PORT || 5000;
 
+// Add this line at the very end
+module.exports = app;
+
 // Start the server
-app.listen(
-  PORT,
-  console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`)
-);
+// app.listen(
+//   PORT,
+//   console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`)
+// );
